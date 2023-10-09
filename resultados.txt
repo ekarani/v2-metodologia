@@ -1,0 +1,55 @@
+Estatística Descritiva da amostra: 
+  Data_Hora         Aceito_Participar  Escolaridade          Genero         
+ Length:81          Length:81          Length:81          Length:81         
+ Class :character   Class :character   Class :character   Class :character  
+ Mode  :character   Mode  :character   Mode  :character   Mode  :character  
+                                                                            
+                                                                            
+                                                                            
+ Participacao_Competicao Interesse_Mentoria Interesse_Grupos_Treinamento
+ Min.   :0.0000          Min.   :1.000      Min.   :2.00                
+ 1st Qu.:0.0000          1st Qu.:4.000      1st Qu.:4.00                
+ Median :0.0000          Median :5.000      Median :4.00                
+ Mean   :0.4568          Mean   :4.296      Mean   :4.16                
+ 3rd Qu.:1.0000          3rd Qu.:5.000      3rd Qu.:5.00                
+ Max.   :1.0000          Max.   :5.000      Max.   :5.00                
+ Interesse_Experiencia Desencorajada   Grupo_Academico Vagas_Exclusivas
+ Min.   :2.000         Min.   :1.000   Min.   :2.000   Min.   :1.000   
+ 1st Qu.:4.000         1st Qu.:3.000   1st Qu.:4.000   1st Qu.:3.000   
+ Median :5.000         Median :4.000   Median :4.000   Median :4.000   
+ Mean   :4.383         Mean   :3.901   Mean   :4.173   Mean   :3.988   
+ 3rd Qu.:5.000         3rd Qu.:5.000   3rd Qu.:5.000   3rd Qu.:5.000   
+ Max.   :5.000         Max.   :5.000   Max.   :5.000   Max.   :5.000   
+ Competicoes_Exclusivas Sugestoes_Comentarios
+ Min.   :1.000          Length:81            
+ 1st Qu.:3.000          Class :character     
+ Median :4.000          Mode  :character     
+ Mean   :3.716                               
+ 3rd Qu.:4.000                               
+ Max.   :5.000                               
+---------------------------------- 
+Cálculo do coeficiente de correlação entre as respostas e a participação prévia em competições: 
+- Correlação pergunta 1 e participação: 0.16716832101631
+- Correlação pergunta 2 e participação: 0.156218155533698
+- Correlação pergunta 3 e participação: 0.0964359993625615
+- Correlação pergunta 4 e participação: 0.0606775098168976
+- Correlação pergunta 5 e participação: 0.0209258370116107
+- Correlação pergunta 6 e participação: 0.144464502637037
+- Correlação pergunta 7 e participação: -0.11174214538478
+---------------------------------- 
+Inferência sobre a média populacional a partir da amostra 
+(Nível de confiança 0.95 e margem de erro 0.10) 
+- Intervalo de confiança para a pergunta 1:
+4.251041 4.341552 
+- Intervalo de confiança para a pergunta 2:
+4.111868 4.20912 
+- Intervalo de confiança para a pergunta 3:
+4.345818 4.419614 
+- Intervalo de confiança para a pergunta 4:
+3.846416 3.956053 
+- Intervalo de confiança para a pergunta 5:
+4.136613 4.209066 
+- Intervalo de confiança para a pergunta 6:
+3.94032 4.034989 
+- Intervalo de confiança para a pergunta 7:
+3.665653 3.766446 
