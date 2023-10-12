@@ -4,10 +4,15 @@ A aplicação de estratégias de incentivo à participação feminina em competi
 
 ## Integrantes da Equipe
 Carolina Martins Freitas
+
 Ekarani Teles Silvestre
+
 Lucas Leal de Lucena
+
 Maria Luiza de Souza Marinho
+
 Maria das Graça Soares da Costa
+
 Volney Silva
 
 ## Dados obtidos
