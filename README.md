@@ -1,4 +1,4 @@
-# v2-metodologia
+# Dados Pesquisa de Opinião
 ## Tema da Pesquisa
 A aplicação de estratégias de incentivo à participação feminina em competições de programação e a percepção destas pelas mulheres programadoras, especialmente as alunas do curso de Ciência da Computação na UFCG.
 
