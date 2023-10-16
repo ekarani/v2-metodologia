@@ -27,6 +27,20 @@ Estatística Descritiva da amostra:
  Mean   :3.716                               
  3rd Qu.:4.000                               
  Max.   :5.000                               
+- Desvio Padrão da pergunta 1:
+0.9006171 
+- Desvio Padrão da pergunta 2:
+0.9676878 
+- Desvio Padrão da pergunta 3:
+0.7343007 
+- Desvio Padrão da pergunta 4:
+1.090928 
+- Desvio Padrão da pergunta 5:
+0.720939 
+- Desvio Padrão da pergunta 6:
+0.9419903 
+- Desvio Padrão da pergunta 7:
+1.002928 
 ---------------------------------- 
 Cálculo do coeficiente de correlação entre as respostas e a participação prévia em competições: 
 - Correlação pergunta 1 e participação: 0.16716832101631
@@ -53,3 +67,12 @@ Inferência sobre a média populacional a partir da amostra
 3.94032 4.034989 
 - Intervalo de confiança para a pergunta 7:
 3.665653 3.766446 
+---------------------------------- 
+Cálculo do p-valor, considerando valor hipotético para média = 4 
+P-valor pergunta 1: 0.004035446 
+P-valor pergunta 2: 0.1394554 
+P-valor pergunta 3: 1.105575e-05 
+P-valor pergunta 4: 0.4176053 
+P-valor pergunta 5: 0.03395252 
+P-valor pergunta 6: 0.9064001 
+P-valor pergunta 7: 0.01274539 
