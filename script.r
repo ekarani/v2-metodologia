@@ -71,101 +71,99 @@ margem_erro <- 0.10  # 10% de margem de erro
 cat("---------------------------------- \n")
 cat("Inferência sobre a média populacional a partir da amostra \n")
 cat("(Nível de confiança 0.95 e margem de erro 0.10) \n")
-media_amostral <- mean(dados_limpos$Interesse_Mentoria)
+media_amostral1 <- mean(dados_limpos$Interesse_Mentoria)
 n <- length(dados_limpos$Interesse_Mentoria)
 graus_liberdade <- n - 1 
 valor_critico <- qt((1 + nivel_confianca) / 2, df = graus_liberdade)
 erro_padrao <- margem_erro * (desvio_padrao1 / valor_critico)
-intervalo_confianca1 <- c(media_amostral - erro_padrao, media_amostral + erro_padrao)
+intervalo_confianca1 <- c(media_amostral1 - erro_padrao, media_amostral1 + erro_padrao)
 cat(sprintf("- Intervalo de confiança para a pergunta 1:\n"))
 cat(intervalo_confianca1, "\n")
 
 
-media_amostral <- mean(dados_limpos$Interesse_Grupos_Treinamento)
+media_amostral2 <- mean(dados_limpos$Interesse_Grupos_Treinamento)
 n <- length(dados_limpos$Interesse_Grupos_Treinamento)
 graus_liberdade <- n - 1  
 valor_critico <- qt((1 + nivel_confianca) / 2, df = graus_liberdade)
 erro_padrao <- margem_erro * (desvio_padrao2 / valor_critico)
-intervalo_confianca2 <- c(media_amostral - erro_padrao, media_amostral + erro_padrao)
+intervalo_confianca2 <- c(media_amostral2 - erro_padrao, media_amostral2 + erro_padrao)
 cat(sprintf("- Intervalo de confiança para a pergunta 2:\n"))
 cat(intervalo_confianca2, "\n")
 
-media_amostral <- mean(dados_limpos$Interesse_Experiencia)
+media_amostral3 <- mean(dados_limpos$Interesse_Experiencia)
 n <- length(dados_limpos$Interesse_Experiencia)
 graus_liberdade <- n - 1
 valor_critico <- qt((1 + nivel_confianca) / 2, df = graus_liberdade)
 erro_padrao <- margem_erro * (desvio_padrao3 / valor_critico)
-intervalo_confianca3 <- c(media_amostral - erro_padrao, media_amostral + erro_padrao)
+intervalo_confianca3 <- c(media_amostral3 - erro_padrao, media_amostral3 + erro_padrao)
 cat(sprintf("- Intervalo de confiança para a pergunta 3:\n"))
 cat(intervalo_confianca3, "\n")
 
-media_amostral <- mean(dados_limpos$Desencorajada)
+media_amostral4 <- mean(dados_limpos$Desencorajada)
 n <- length(dados_limpos$Desencorajada)
 graus_liberdade <- n - 1
 valor_critico <- qt((1 + nivel_confianca) / 2, df = graus_liberdade)
 erro_padrao <- margem_erro * (desvio_padrao4 / valor_critico)
-intervalo_confianca4 <- c(media_amostral - erro_padrao, media_amostral + erro_padrao)
+intervalo_confianca4 <- c(media_amostral4 - erro_padrao, media_amostral4 + erro_padrao)
 cat(sprintf("- Intervalo de confiança para a pergunta 4:\n"))
 cat(intervalo_confianca4, "\n")
 
-media_amostral <- mean(dados_limpos$Grupo_Academico)
+media_amostral5 <- mean(dados_limpos$Grupo_Academico)
 n <- length(dados_limpos$Grupo_Academico)
 graus_liberdade <- n - 1
 valor_critico <- qt((1 + nivel_confianca) / 2, df = graus_liberdade)
 erro_padrao <- margem_erro * (desvio_padrao5 / valor_critico)
-intervalo_confianca5 <- c(media_amostral - erro_padrao, media_amostral + erro_padrao)
+intervalo_confianca5 <- c(media_amostral5 - erro_padrao, media_amostral5 + erro_padrao)
 cat(sprintf("- Intervalo de confiança para a pergunta 5:\n"))
 cat(intervalo_confianca5, "\n")
 
-media_amostral <- mean(dados_limpos$Vagas_Exclusivas)
+media_amostral6 <- mean(dados_limpos$Vagas_Exclusivas)
 n <- length(dados_limpos$Vagas_Exclusivas)
 graus_liberdade <- n - 1
 valor_critico <- qt((1 + nivel_confianca) / 2, df = graus_liberdade)
 erro_padrao <- margem_erro * (desvio_padrao6 / valor_critico)
-intervalo_confianca6 <- c(media_amostral - erro_padrao, media_amostral + erro_padrao)
+intervalo_confianca6 <- c(media_amostral6 - erro_padrao, media_amostral6 + erro_padrao)
 cat(sprintf("- Intervalo de confiança para a pergunta 6:\n"))
 cat(intervalo_confianca6,"\n")
 
-media_amostral <- mean(dados_limpos$Competicoes_Exclusivas)
+media_amostral7 <- mean(dados_limpos$Competicoes_Exclusivas)
 n <- length(dados_limpos$Competicoes_Exclusivas)
 graus_liberdade <- n - 1
 valor_critico <- qt((1 + nivel_confianca) / 2, df = graus_liberdade)
 erro_padrao <- margem_erro * (desvio_padrao7 / valor_critico)
-intervalo_confianca7 <- c(media_amostral - erro_padrao, media_amostral + erro_padrao)
+intervalo_confianca7 <- c(media_amostral7 - erro_padrao, media_amostral7 + erro_padrao)
 cat(sprintf("- Intervalo de confiança para a pergunta 7:\n"))
 cat(intervalo_confianca7, "\n")
 
 
 cat("---------------------------------- \n")
-cat("Cálculo do p-valor, considerando valor hipotético para média = 4 \n")
+cat("Cálculo do p-valor, considerando valor hipotético da média populacional = 3 \n")
 
-valor_referencia <- 4
-
-teste1 <- t.test(dados_limpos$Interesse_Mentoria, mu = valor_referencia)
+teste1 <- t.test(dados_limpos$Interesse_Mentoria, mu =  3)
 pvalor1 <- teste1$p.value
 cat("P-valor pergunta 1:", pvalor1, "\n")
 
-teste2 <- t.test(dados_limpos$Interesse_Grupos_Treinamento, mu = valor_referencia)
+teste2 <- t.test(dados_limpos$Interesse_Grupos_Treinamento, mu =  3)
 pvalor2 <- teste2$p.value
 cat("P-valor pergunta 2:", pvalor2, "\n")
 
-teste3 <- t.test(dados_limpos$Interesse_Experiencia, mu = valor_referencia)
+teste3 <- t.test(dados_limpos$Interesse_Experiencia, mu =  3)
 pvalor3 <- teste3$p.value
 cat("P-valor pergunta 3:", pvalor3, "\n")
 
-teste4 <- t.test(dados_limpos$Desencorajada, mu = valor_referencia)
+teste4 <- t.test(dados_limpos$Desencorajada, mu =  3)
 pvalor4 <- teste4$p.value
 cat("P-valor pergunta 4:", pvalor4, "\n")
 
-teste5 <- t.test(dados_limpos$Grupo_Academico, mu = valor_referencia)
+teste5 <- t.test(dados_limpos$Grupo_Academico, mu =  3)
 pvalor5 <- teste5$p.value
 cat("P-valor pergunta 5:", pvalor5, "\n")
 
-teste6 <- t.test(dados_limpos$Vagas_Exclusivas, mu = valor_referencia)
+teste6 <- t.test(dados_limpos$Vagas_Exclusivas, mu =  3)
 pvalor6 <- teste6$p.value
 cat("P-valor pergunta 6:", pvalor6, "\n")
 
-teste7 <- t.test(dados_limpos$Competicoes_Exclusivas, mu = valor_referencia)
+teste7 <- t.test(dados_limpos$Competicoes_Exclusivas, mu =  3)
 pvalor7 <- teste7$p.value
 cat("P-valor pergunta 7:", pvalor7, "\n")
 

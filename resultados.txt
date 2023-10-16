@@ -68,11 +68,11 @@ Inferência sobre a média populacional a partir da amostra
 - Intervalo de confiança para a pergunta 7:
 3.665653 3.766446 
 ---------------------------------- 
-Cálculo do p-valor, considerando valor hipotético para média = 4 
-P-valor pergunta 1: 0.004035446 
-P-valor pergunta 2: 0.1394554 
-P-valor pergunta 3: 1.105575e-05 
-P-valor pergunta 4: 0.4176053 
-P-valor pergunta 5: 0.03395252 
-P-valor pergunta 6: 0.9064001 
-P-valor pergunta 7: 0.01274539 
+Cálculo do p-valor, considerando valor hipotético da média populacional = 3 
+P-valor pergunta 1: 2.455671e-21 
+P-valor pergunta 2: 2.80999e-17 
+P-valor pergunta 3: 3.371626e-28 
+P-valor pergunta 4: 1.023894e-10 
+P-valor pergunta 5: 2.419763e-24 
+P-valor pergunta 6: 1.222534e-14 
+P-valor pergunta 7: 8.791906e-09 
